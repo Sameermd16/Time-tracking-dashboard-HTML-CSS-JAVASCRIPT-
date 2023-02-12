@@ -7,74 +7,121 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+  <main class="main-container">
+    <div class="jeremy-main-div grid">
+      <div class="jeremy-div">
+        <img src="images/image-jeremy.png" alt="">
+        <p>Report for <br><span>Jeremy Robson</span></p>
+      </div>
+      <div class="parameters">
+        <p>Daily</p>
+        <p>Weekly</p>
+        <p>Monthly</p>
+      </div>
+    </div>
+    <div class="grid work">
+      <div class="icon">
+        <img src="images/icon-work.svg" alt="">
+      </div>
+      <div class="time">
+        <div class="elipsis-div">
+          <p>Work</p>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours">
+          <p>32hrs</p>
+          <span>Last Week - 36hrs</span>
+        </div>
+        
+      </div>
+    </div>
+    <div class="grid play">
+      <div class="icon">
+        <img src="images/icon-play.svg" alt="">
+      </div>
+      <div class="time">
+        <div class="elipsis-div">
+          <p>Play</p>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours">
+          <p>10hrs</p>
+          <span>Last Week - 8hrs</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid study">
+      <div class="icon">
+        <img src="images/icon-study.svg" alt="">
+      </div>
+      <div class="time">
+        <div class="elipsis-div">
+          <p>Study</p>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours">
+          <p>4hrs</p>
+          <span>Last Week - 7hrs</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid exercise">
+      <div class="icon">
+        <img src="images/icon-exercise.svg" alt="">
+      </div>
+      <div class="time">
+        <div class="elipsis-div">
+          <p>Exercise</p>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours">
+          <p>4hrs</p>
+          <span>Last Week - 5hrs</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid social">
+      <div class="icon">
+        <img src="images/icon-social.svg" alt="">
+      </div>
+      <div class="time">
+        <div class="elipsis-div">
+          <p>Social</p>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours">
+          <p>5hrs</p>
+          <span>Last Week - 10hrs</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid self-care">
+      <div class="icon">
+        <img src="images/icon-self-care.svg" alt="">
+      </div>
+      <div class="time">
+        <div class="elipsis-div">
+          <p>Self Care</p>
+          <img src="images/icon-ellipsis.svg" alt="">
+        </div>
+        <div class="hours">
+          <p>2hrs</p>
+          <span>Last Week - 2hrs</span>
+        </div>
+      </div>
+    </div>
+  </main>
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Sameermd16" target="_blank">Sameer md</a>.
   </div>
+<script src="script.js"></script>
 </body>
 </html>

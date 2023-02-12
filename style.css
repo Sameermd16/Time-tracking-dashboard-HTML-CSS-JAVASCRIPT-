@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(226, 43%, 10%);
+  /* border: 1px solid white; */
+  gap: 30px;
+}
+.jeremy-div img {
+  width: 50px;
+  margin-bottom: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.jeremy-div p {
+  font-size: 14px;
+  font-weight: 300px;
+  color: hsl(236, 100%, 87%);
+}
+.jeremy-div span {
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+}
+.jeremy-main-div .jeremy-div {
+  height: 70%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+}
+.main-container {
+  /* background-color: white; */
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "jeremy-main-div grid grid grid"
+    "jeremy-main-div grid grid grid";
+  gap: 20px;
+}
+.jeremy-main-div {
+  grid-area: jeremy-main-div;
+}
+.grid {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.jeremy-main-div .parameters {
+  background-color: hsl(235, 46%, 20%);
+  padding: 20px;
+  height: 30%;
+}
+.jeremy-main-div {
+  overflow: hidden;
+}
+.jeremy-main-div .parameters p {
+  color: hsla(236, 100%, 87%, 0.503);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.jeremy-main-div .parameters p:hover {
+  color: white;
+}
+.grid .icon {
+  text-align: right;
+}
+.grid .icon img {
+  width: 50px;
+}
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+.grid .time {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* border: 1px solid white; */
+  background-color: hsl(226, 43%, 10%);
+  border-radius: 10px;
+  margin-top: -20px;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}
+.elipsis-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.grid .time .hours p {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.grid .time .hours span {
+  font-size: 14px;
+  color: hsla(236, 100%, 87%, 0.503);
+}
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.exercise .time {
+  margin-top: -5px;
+}
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+.social .time {
+  margin-top: -35px;
+}
+.self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+.time:hover {
+    background-color:  hsl(235, 45%, 61%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.96);
+}
+.attribution a {
+  color: hsla(228, 54%, 63%, 0.982);
+}
+.elipsis-div img{
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 850px){
+   
+    .main-container{
+      margin: 20px 0 0 0;
+        height: 100%;
+        max-width: 300px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px repeat(6, 150px);
+        grid-template-areas: 
+        "jeremy-main-div"
+        "grid"
+        "grid"
+    }
+    .jeremy-main-div .parameters {
+        /* border: 1px solid white; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .jeremy-div img{
+        margin-bottom: 0;
+    }
+    .jeremy-div span{
+        font-size: 20px;
+    }
+    .jeremy-div{
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+    }
+    .hours{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .attribution{
+      margin-bottom: 10px;
+    }
+}
